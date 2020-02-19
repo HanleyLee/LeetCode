@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='General'/>
+        <page name='BinarySearch'/>
+        <page name='SelectionSort'/>
+        <page name='QuickSort'/>
+        <page name='BubbleSort'/>
+        <page name='MergeSort'/>
+        <page name='BucketSort'/>
+        <page name='BinaryTree'/>
+        <page name='BinarySearchTree'/>
+        <page name='HashTable'/>
+        <page name='Queue'/>
+        <page name='Stack'/>
+        <page name='Tree'/>
+        <page name='InsertionSort'/>
+        <page name='CountingSort'/>
+        <page name='HeapSort'/>
+        <page name='ShellSort'/>
+        <page name='LinkedList'/>
+        <page name='SegmentTree'/>
+        <page name='DepthFirstSearch'/>
+        <page name='BreadthFirstSearch'/>
+        <page name='UnionFind'/>
+        <page name='Dijkstra'/>
+    </pages>
+</playground>
