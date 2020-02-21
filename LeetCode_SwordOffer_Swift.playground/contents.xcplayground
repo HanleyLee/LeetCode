@@ -2,6 +2,7 @@
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='00. General'/>
+        <page name='00. 根据数组生成链表'/>
         <page name='03. 数组中重复的数字'/>
         <page name='04. 二维数组中的查找 | 未完成'/>
         <page name='05. 替换空格'/>
@@ -18,5 +19,6 @@
         <page name='21. 调整数组顺序使奇数位于偶数前面'/>
         <page name='22. 链表中倒数第 k 个节点'/>
         <page name='24. 翻转链表 | 未完成'/>
+        <page name='25. 合并两个排序的链表'/>
     </pages>
 </playground>
