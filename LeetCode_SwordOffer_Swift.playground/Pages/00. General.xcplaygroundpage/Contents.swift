@@ -25,3 +25,8 @@ class Solution {
 
 }
 
+
+
+var str = "hello"
+var count = str.count
+str[str.index(str.startIndex, offsetBy: 1)]

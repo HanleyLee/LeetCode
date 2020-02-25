@@ -2,6 +2,9 @@
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='00. General'/>
+        <page name='00. 前序遍历'/>
+        <page name='00. 中序遍历'/>
+        <page name='00. 后序遍历'/>
         <page name='00. 根据数组生成链表'/>
         <page name='03. 数组中重复的数字'/>
         <page name='04. 二维数组中的查找 | 未完成'/>
@@ -20,5 +23,17 @@
         <page name='22. 链表中倒数第 k 个节点'/>
         <page name='24. 翻转链表 | 未完成'/>
         <page name='25. 合并两个排序的链表'/>
+        <page name='26. 树的子结构 | 未完成'/>
+        <page name='27 二叉树的镜像'/>
+        <page name='28. 对称的二叉树'/>
+        <page name='29. 顺时针打印矩阵 | 未完成'/>
+        <page name='30. 包含 min 函数的栈'/>
+        <page name='31. 栈的压入, 弹出序列 | 未完成'/>
+        <page name='32-I. 从上到下打印二叉树'/>
+        <page name='32-II. 从上到下打印二叉树'/>
+        <page name='39. 数组中出现次数超过一半的数字'/>
+        <page name='40. 最小的 k 个数'/>
+        <page name='42. 连续子数组的最大和 | 未完成'/>
+        <page name='43. 1~n 整数中 1 出现的次数 | 未完成'/>
     </pages>
 </playground>
