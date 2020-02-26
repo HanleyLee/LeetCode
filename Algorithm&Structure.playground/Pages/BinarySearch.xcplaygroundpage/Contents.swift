@@ -40,18 +40,18 @@ public func binarySearch<T: Comparable>(_ a: [T], key: T) -> Int? {
 
 
 
-
+var numArr = [3, 2, 66, 4, 99, 67]
 // Binary search requires that the array is sorted from low to high
-let sorted = numArr1.sorted()
+let sorted = numArr.sorted()
 
 // Using recursive solution
-binarySearch(sorted, key: 2, range: 0 ..< sorted.count)   // gives 1
-binarySearch(sorted, key: 99, range: 0 ..< sorted.count)  // gives 11
+binarySearch(sorted, key: 2, range: 0 ..< sorted.count)   // gives 9
+binarySearch(sorted, key: 99, range: 0 ..< sorted.count)  // gives 7
 binarySearch(sorted, key: 43, range: 0 ..< sorted.count)  // nil
 binarySearch(sorted, key: 42, range: 0 ..< sorted.count)  // nil
 
 // Using iterative solution
-binarySearch(sorted, key: 2)   // gives 1
-binarySearch(sorted, key: 67)  // nil
+binarySearch(sorted, key: 2)   // gives 0
+binarySearch(sorted, key: 67)  // 4
 binarySearch(sorted, key: 43)  // nil
-binarySearch(sorted, key: 67)  // nil
+binarySearch(sorted, key: 67)  // 4

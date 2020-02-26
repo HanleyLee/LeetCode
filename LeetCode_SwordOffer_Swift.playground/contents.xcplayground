@@ -2,9 +2,6 @@
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='00. General'/>
-        <page name='00. 前序遍历'/>
-        <page name='00. 中序遍历'/>
-        <page name='00. 后序遍历'/>
         <page name='00. 根据数组生成链表'/>
         <page name='03. 数组中重复的数字'/>
         <page name='04. 二维数组中的查找 | 未完成'/>

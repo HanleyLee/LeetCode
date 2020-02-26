@@ -46,8 +46,6 @@ class Solution {
 
 
 // 迭代解法
-
-
 class Solution1 {
     func preOrder(root: TreeNode?) -> [Int] {
         guard let root = root else { return [] }

@@ -24,5 +24,8 @@
         <page name='BreadthFirstSearch'/>
         <page name='UnionFind'/>
         <page name='Dijkstra'/>
+        <page name='中序遍历'/>
+        <page name='前序遍历'/>
+        <page name='后序遍历'/>
     </pages>
 </playground>
