@@ -59,6 +59,7 @@
 // @lc code=start
 class Solution {
     func longestPalindrome(_ s: String) -> String {
+        let a = Int(s)
         
     }
 }
