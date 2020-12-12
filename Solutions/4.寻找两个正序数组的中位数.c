@@ -69,16 +69,18 @@
 
 // @lc code=start
 
+#include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
-
-int main(int argc, char** argv) {
+int main(int argc, char **argv) {
     int r1[] = {1};
     int r2[] = {2};
 
     int n1 = sizeof(r1) / sizeof(r1[0]);
     int n2 = sizeof(r2) / sizeof(r2[0]);
 
+    int *a = 1;
 }
 // @lc code=end

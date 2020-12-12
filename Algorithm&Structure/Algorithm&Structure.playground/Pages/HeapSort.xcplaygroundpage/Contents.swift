@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 // 堆排序
 var len: Int = 0
 func heapSort(_ array: inout Array<NSInteger>) {
