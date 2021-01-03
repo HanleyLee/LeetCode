@@ -30,34 +30,9 @@
  *
  */
 
-// @lc code=start
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <uthash.h>
-
-/**
- * Note: The returned array must be malloced, assume caller calls free().
- */
-int *twoSum1(int *nums, int numsSize, int target, int *returnSize) {
-    int i, j;
-    int *tmp = (int *)malloc(sizeof(int) * 2);
-
-    for (i = 0; i < numsSize; j++) {
-        for (j = i + 1; j < numsSize; j++) {
-            if ((nums[i] + nums[j] == target)) {
-                tmp[0] = i;
-                tmp[1] = j;
-                *returnSize = 2;
-                return tmp;
-            }
-        }
-    }
-
-    *returnSize = 0;
-    return 0;
-}
-// @lc code=end
 
 typedef struct hashTable {
     int key;
@@ -84,18 +59,52 @@ void insert(int ikey, int ival) {
     }
 }
 
-int *twoSum2(int *nums, int numsSize, int target, int *returnSize) {
+int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
     hashtable = NULL;
     for (int i = 0; i < numsSize; i++) {
         HashTable *it = find(target - nums[i]);
         if (it != NULL) {
-            int *ret = malloc(sizeof(int) * 2);
-            (void)(ret[0] = it->val), ret[1] = i;
+            int *res = malloc(sizeof(int) * numsSize);
+            res[0] = it->val;
+            res[1] = i;
             *returnSize = 2;
-            return ret;
+            return res;
         }
         insert(nums[i], i);
     }
     *returnSize = 0;
     return NULL;
+}
+
+
+// 暴力遍历法
+int *twoSum1(int *nums, int numsSize, int target, int *returnSize) {
+    int i, j;
+    int *tmp = (int *)malloc(sizeof(int) * 2);
+
+    for (i = 0; i < numsSize; j++) {
+        for (j = i + 1; j < numsSize; j++) {
+            if ((nums[i] + nums[j] == target)) {
+                tmp[0] = i;
+                tmp[1] = j;
+                *returnSize = 2;
+                return tmp;
+            }
+        }
+    }
+
+    *returnSize = 0;
+    return 0;
+}
+
+
+int main(int argc, const char * argv[]) {
+    int arr[4] = {1, 2, 5, 7};
+    int returnsize = 0;
+    int *a;
+    a = twoSum(arr, 4, 9, &returnsize);
+    for (int i = 0; i < returnsize; i++) {
+        printf("*(arr + %d): %d\n", i, a[i]);
+    }
+    return 0;
 }
