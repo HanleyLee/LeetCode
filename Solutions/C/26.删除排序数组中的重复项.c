@@ -60,8 +60,28 @@
 
 // @lc code=start
 
-# include <stdio.h>
+#include <stdio.h>
+#include <string.h>
 
 int removeDuplicates(int *nums, int numsSize) {
+    if (numsSize == 0) {
+        return 0;
+    }
+
+    int size = 0;
+
+    for (int i = 0; i < numsSize; i++) {
+        if (nums[i] != nums[size]) {
+            nums[++size] = nums[i];
+        }
+
+    }
+    return size + 1;
+}
+
+int main() {
+    int nums[5] = {1, 1, 1, 1, 3};
+    printf("%d", removeDuplicates(nums, 5));
+    return 0;
 }
 // @lc code=end
