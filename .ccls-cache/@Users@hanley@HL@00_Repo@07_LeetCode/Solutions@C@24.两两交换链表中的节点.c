@@ -66,7 +66,7 @@ struct ListNode *swapPairs(struct ListNode *head) {
         return head;
     }
 
-    struct ListNode *next = head->next;
+    struct ListNode next = head->next;
     head->next = swapPairs(next->next);
 
     return next;
