@@ -1,0 +1,6 @@
+set noautochdir
+cd ~/HL/00_Repo/07_LeetCode
+set path+=~/HL/00_Repo/07_LeetCode/**
+"autocmd User LocalVimRCPre  echom 'before loading local vimrc'
+"autocmd User LocalVimRCPost echom 'after loading local vimrc'
+"autocmd FileType * cd ~/HL/00_Repo/07_LeetCode

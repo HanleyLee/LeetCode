@@ -30,8 +30,12 @@
  *
  */
 
+#include <AvailabilityInternal.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/cdefs.h>
+#include <sys/resource.h>
+#include <sys/signal.h>
 #include <uthash.h>
 
 typedef struct hashTable {

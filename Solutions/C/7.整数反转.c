@@ -58,4 +58,8 @@ int reverse(int x) {
 
     return (int)sum;
 }
+
+int main() {
+    return 0;
+}
 // @lc code=end
